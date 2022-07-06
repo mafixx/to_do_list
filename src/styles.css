@@ -1,1 +1,85 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Splash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Splash&family=Trispace:wght@200&display=swap');
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+title{
+  text-align: center;
+  align-items: center;
+  color: blueviolet;
+}
+
+body {
+    background: linear-gradient(-90deg, #ffffff,
+    #000000, #a0a0a0, #525a58);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    color: white;
+    height: 100vh; 
+    text-align: center;
+    margin: 2px;
+    padding: 15px;
+    align-items: center;
+  }
+
+h1{
+    font-family: 'Splash', cursive;
+    text-shadow: 4px 4px 2px rgb(0, 0, 0);
+}
+
+li {
+    list-style: none;
+    padding: 5px;
+    text-align: center;
+    font-family: 'Trispace', sans-serif;
+    flex-direction: row;
+    margin: 5px;    
+}
+
+input{
+  border-style: solid;
+  border-radius: 5px;
+  box-shadow: 0px 0px 22px rgba(255, 255, 255, 0.75);
+  text-shadow: 0px 0px 5px rgba(66,66,66,.56);
+}
+
+button{
+    margin: 5px;
+    padding: 5px;
+}
+
+#formulario{
+    font-family: 'Trispace', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+}
+
+legend{
+  font-size: 20px;
+}
+
+fieldset{
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
